@@ -1,69 +1,95 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <title>تطبيقي</title>
-    <style>
-        body {
-            font-family: Arial;
-            text-align: center;
-            background: #f5f5f5;
-            padding: 20px;
-        }
+<meta charset="UTF-8">
+<title>تطبيق نبرا</title>
 
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            max-width: 400px;
-            margin: auto;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+<style>
+body{
+    margin:0;
+    font-family: Arial;
+    direction: rtl;
+    background: linear-gradient(135deg, #5b2cff, #8e44ad);
+    color: white;
+    text-align: center;
+}
 
-        img {
-            width: 100%;
-            border-radius: 10px;
-        }
+/* الصفحة كاملة */
+.container{
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+}
 
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: #34A853;
-            color: white;
-            padding: 12px 20px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-size: 18px;
-            margin-top: 15px;
-        }
+/* العنوان */
+h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
 
-        .btn img {
-            width: 24px;
-        }
+/* النص */
+p{
+    font-size: 19px;
+    max-width: 650px;
+    line-height: 1.9;
+    opacity: 0.95;
+}
 
-        .btn:hover {
-            background: #2c8c46;
-        }
-    </style>
+/* صورة التطبيق أصغر */
+img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin: 25px 0;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+/* زر التحميل */
+.btn{
+    margin-top:20px;
+    background:#00c853;
+    color:white;
+    padding:14px 30px;
+    border-radius:14px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#00a844;
+    transform: scale(1.05);
+}
+</style>
+
 </head>
+
 <body>
 
-<div class="card">
-    <h2>تطبيق نبرا</h2>
+<div class="container">
 
-    <img src="app-image.png" alt="صورة التطبيق">
+    <h1>تطبيق نبرا</h1>
 
     <p>
-        تطبيق مخصص لطلاب البكالوريا الأدبي في سوريا، يحتوي على أسئلة وأجوبة بطريقة سهلة وممتعة.
+        هل تريد التفوق في البكالوريا الأدبي بدون تعب وملل؟  
+        تطبيق نبرا هو طريقك السهل نحو النجاح، يحتوي على ملخصات مركزة، أسئلة متوقعة، ومراجعات ذكية تغنيك عن الكتب الطويلة.  
+        ابدأ الآن واجعل دراستك أسرع وأسهل وأكثر ذكاءً.
     </p>
 
-    <a href="https://play.google.com/store/apps/details?id=com.nubra.nubra123" class="btn">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg">
-        تثبيت الآن
+    <img src="app-image" alt="أيقونة التطبيق">
+
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.nubra.nubra123">
+        تثبيت التطبيق الآن
     </a>
+
 </div>
 
 </body>
+</html>
 
 </html>
